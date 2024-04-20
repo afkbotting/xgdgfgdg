@@ -1,0 +1,8 @@
+local children = workspace:GetChildren()
+local randomIndex = math.random(1, #children)
+local randomObject = children[randomIndex]
+local ohInstance1 = randomObject
+local ohBoolean2 = false
+local ohString3 = "WoodenSword"
+
+game:GetService("ReplicatedStorage").Packages.Knit.Services.ToolService.RF.AttackPlayerWithSword:InvokeServer(ohInstance1, ohBoolean2, ohString3)
